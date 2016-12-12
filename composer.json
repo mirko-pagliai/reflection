@@ -1,0 +1,27 @@
+{
+    "name": "mirko-pagliai/reflection",
+    "description": "A trait for Reflection",
+    "homepage": "https://github.com/mirko-pagliai/reflection",
+    "type": "library",
+    "license": "AGPL",
+    "authors": [{
+        "name": "Mirko Pagliai",
+        "email": "mirko.pagliai@gmail.com"
+    }],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reflection\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Reflection\\Test\\": "tests/"
+        }
+    }
+}

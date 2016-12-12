@@ -9,7 +9,7 @@
 
 	<testsuites>
 		<testsuite name="Reflection Test Cases">
-			<directory>./tests</directory>
+			<directory>./tests/src</directory>
 		</testsuite>
 	</testsuites>
     
