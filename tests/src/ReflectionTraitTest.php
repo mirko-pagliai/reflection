@@ -31,6 +31,8 @@ class ExampleClass
 
     protected $secondProperty = 'a protected property';
 
+    public $publicProperty = 'this is public';
+
     protected function protectedMethod($var = null)
     {
         if (empty($var)) {
