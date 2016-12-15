@@ -12,13 +12,13 @@ This trait comes to test protected and private methods and properties with PHPUn
 [See tests](https://github.com/mirko-pagliai/reflection/tree/master/tests/src) for examples.  
 In the code we can access (and test) faster to the protected and private methods and properties that are declared in the `Example` class.
 
-These are the available methods:
+Available methods are:
 
     invokeMethod(&$object, $methodName, array $parameters = [])
-    getProperty(&$object, $propertyName)
-    setProperty(&$object, $propertyName, $propertyValue)
 
-Available methods are:
+    getProperty(&$object, $propertyName)
+
+    setProperty(&$object, $propertyName, $propertyValue)
 
 ## Versioning
 For transparency and insight into our release cycle and to maintain backward compatibility, 
