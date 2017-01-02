@@ -50,6 +50,21 @@ trait ReflectionTrait
     }
 
     /**
+     * Gets a property value
+     * @param object $object Instantiated object that we will run method on
+     * @param string $propertyName Property name
+     * @return mixed Property value
+     * @uses _getPropertyInstance()
+     */
+    public function getProperty(&$object, $propertyName)
+    {
+        $property = $this->_getPropertyInstance($object, $propertyName);
+        $property->setAccessible(true);
+
+        return $property->getValue($object);
+    }
+
+    /**
      * Invokes a method
      * @param object $object Instantiated object that we will run method on
      * @param string $methodName Method name to call
@@ -63,21 +78,6 @@ trait ReflectionTrait
         $method->setAccessible(true);
 
         return $method->invokeArgs($object, $parameters);
-    }
-
-    /**
-     * Gets a property value
-     * @param object $object Instantiated object that we will run method on
-     * @param string $propertyName Property name
-     * @return mixed Property value
-     * @uses _getPropertyInstance()
-     */
-    public function getProperty(&$object, $propertyName)
-    {
-        $property = $this->_getPropertyInstance($object, $propertyName);
-        $property->setAccessible(true);
-
-        return $property->getValue($object);
     }
 
     /**
