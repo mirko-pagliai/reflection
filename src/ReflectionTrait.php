@@ -28,9 +28,9 @@ namespace Reflection;
 trait ReflectionTrait
 {
     /**
-     * Internal method to get the method instance
+     * Internal method to get the `ReflectionMethod` instance
      * @param object $object Instantiated object that we will run method on
-     * @param string $methodName Method name to call
+     * @param string $methodName Method name
      * @return \ReflectionMethod
      */
     protected function _getMethodInstance(&$object, $methodName)
@@ -39,8 +39,8 @@ trait ReflectionTrait
     }
 
     /**
-     * Internal method to get the property instance
-     * @param object $object Instantiated object that we will run method on
+     * Internal method to get the `ReflectionProperty` instance
+     * @param object $object Instantiated object that has the property
      * @param string $propertyName Property name
      * @return \ReflectionProperty
      */
@@ -51,7 +51,7 @@ trait ReflectionTrait
 
     /**
      * Gets a property value
-     * @param object $object Instantiated object that we will run method on
+     * @param object $object Instantiated object that has the property
      * @param string $propertyName Property name
      * @return mixed Property value
      * @uses _getPropertyInstance()
@@ -67,7 +67,7 @@ trait ReflectionTrait
     /**
      * Invokes a method
      * @param object $object Instantiated object that we will run method on
-     * @param string $methodName Method name to call
+     * @param string $methodName Method name
      * @param array $parameters Array of parameters to pass into method
      * @return mixed Method return
      * @uses _getMethodInstance()
@@ -82,7 +82,7 @@ trait ReflectionTrait
 
     /**
      * Sets a property value
-     * @param object $object Instantiated object that we will run method on
+     * @param object $object Instantiated object that has the property
      * @param string $propertyName Property name
      * @param mixed $propertyValue Property value you want to set
      * @return void
