@@ -66,7 +66,7 @@ class ReflectionTraitTest extends PHPUnit_Framework_TestCase
         $this->assertNull($this->getProperty($example, 'firstProperty'));
         $this->assertEquals('a protected property', $this->getProperty($example, 'secondProperty'));
     }
-    
+
     /**
      * Tests for `invokeMethod()` method
      * @test
