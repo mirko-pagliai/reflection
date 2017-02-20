@@ -22,7 +22,7 @@
  */
 namespace Reflection\Test;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Reflection\ReflectionTrait;
 
 class ExampleClass
@@ -51,7 +51,7 @@ class ExampleClass
 /**
  * Reflection\ReflectionTrait Test Case
  */
-class ReflectionTraitTest extends PHPUnit_Framework_TestCase
+class ReflectionTraitTest extends TestCase
 {
     use ReflectionTrait;
 
