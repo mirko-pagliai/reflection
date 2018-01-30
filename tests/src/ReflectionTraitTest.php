@@ -25,6 +25,9 @@ namespace Reflection\Test;
 use PHPUnit\Framework\TestCase;
 use Reflection\ReflectionTrait;
 
+/**
+ * An example class
+ */
 class ExampleClass
 {
     protected $firstProperty;
@@ -61,7 +64,7 @@ class ReflectionTraitTest extends TestCase
      */
     public function testGetProperty()
     {
-        $example = new ExampleClass();
+        $example = new ExampleClass;
 
         $this->assertNull($this->getProperty($example, 'firstProperty'));
         $this->assertEquals('a protected property', $this->getProperty($example, 'secondProperty'));
@@ -73,7 +76,7 @@ class ReflectionTraitTest extends TestCase
      */
     public function testInvokeMethod()
     {
-        $example = new ExampleClass();
+        $example = new ExampleClass;
 
         $this->assertEquals('a protected method', $this->invokeMethod($example, 'protectedMethod'));
         $this->assertEquals('example string', $this->invokeMethod($example, 'protectedMethod', ['example string']));
@@ -85,7 +88,7 @@ class ReflectionTraitTest extends TestCase
      */
     public function testSetProperty()
     {
-        $example = new ExampleClass();
+        $example = new ExampleClass;
 
         $this->setProperty($example, 'firstProperty', 'example string');
         $this->assertEquals('example string', $example->firstProperty);
