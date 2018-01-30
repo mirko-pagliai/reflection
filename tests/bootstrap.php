@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of Reflection.
+ * This file is part of Reflection
  *
  * Licensed under The MIT License
  * For full copyright and license information, please see the LICENSE.txt
