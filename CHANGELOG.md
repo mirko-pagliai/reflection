@@ -1,5 +1,9 @@
 # 1.x branch
 ## 1.0 branch
+### 1.0.3
+* changed license to MIT;
+* little fixes.
+
 ### 1.0.2
 * updated for phpunit 6.0.
 
