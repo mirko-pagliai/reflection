@@ -1,11 +1,14 @@
+
+Starting April 2018 and *1.0.3* version, **this repository has been abandoned**.  
+See instead: [mirko-pagliai/php-tools](https://github.com/mirko-pagliai/php-tools).
+
+***
+
 # Reflection
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
 [![Build Status](https://travis-ci.org/mirko-pagliai/reflection.svg?branch=master)](https://travis-ci.org/mirko-pagliai/reflection)
 [![Coverage Status](https://img.shields.io/codecov/c/github/mirko-pagliai/reflection.svg?style=flat-square)](https://codecov.io/github/mirko-pagliai/reflection)
-
-Starting April 2018 and *1.0.3* version, **this repository has been abandoned**.  
-See instead: [mirko-pagliai/php-tools](https://github.com/mirko-pagliai/php-tools).
     
 This package contains the `ReflectionTrait`, a trait that works as a wrapper for
 the `Reflection` classes provided by PHP, and allows you to easily:
